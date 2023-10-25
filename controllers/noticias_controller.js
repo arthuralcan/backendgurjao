@@ -6,6 +6,8 @@ router.get("/", async (req, res) => {
     res.json(await Noticias.find());
 });
 
+// teste
+
 router.get("/:id", async (req, res) => {
     res.json(await Noticias.findById(req.params.id));
 });
