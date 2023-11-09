@@ -22,7 +22,7 @@ console.log("Conectando banco de dados...");
 mongoose.connect(process.env.URL_BANCO).then(() => {
     console.log("Iniciando banco de dados...");
     app.listen(parseInt(process.env.PORTA_SERVIDOR), () => {
-        console.log(`o servidor Está no ar em http://localhost:${process.env.PORTA_SERVIDOR}`);
+        console.log(`Conectado com o banco de dados`);
     });
 });
  
